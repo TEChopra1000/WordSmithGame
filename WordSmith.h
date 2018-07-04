@@ -12,7 +12,9 @@
  and then the game begins by using the public member newRoundofGames().
  
  The player with the highest score will be displayed at the end of a round,
- which termiantes when a player manually enters "N" when prompted. 
+ which termiantes when a player manually enters "N" when prompted.
+ 
+ See a detailed description of a single game in README.md.
  */
 
 #include <time.h>

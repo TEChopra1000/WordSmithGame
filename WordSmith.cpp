@@ -54,7 +54,7 @@ void WordSmith::startGame()
 {
    
    string shuffledWord;
-   cout << "Welcome to WordSmithTM - Your letters are: ";
+   cout << "Welcome to WordSmith - Your letters are: ";
    initialWordShuffled = returnShuffledWordUpper();
    for (int i=0;i<initialWordShuffled.length();i++)
    {

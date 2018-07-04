@@ -1,6 +1,6 @@
-
 #include <iostream>
 #include <string>
+#include <cmath>
 
 #include "Trie.h"
 using namespace std;
@@ -52,7 +52,7 @@ void Trie::insert(string str)
    Trie *trieCrawler = this;
    for (int i = 0; i < str.length(); i++)
    {
-      int index = str[i] - CASE;
+      int index = abs(str[i] - CASE);
       if (!trieCrawler->children[index])
          trieCrawler->children[index] = new Trie;
       
