@@ -1,6 +1,6 @@
 # WordSmithGame
 
-##Overview
+## Overview
 
 Welcome to Word Smith: a multiplayer, word-centric, mind-teaser game!
 
@@ -30,12 +30,13 @@ WordSmith newGames; newGames.newRoundofGames();
 To end a game, simply press “N” when prompted at the end of the first-round.
 
 
-##Implementation The game was written in C++. A Trie data structure (prefix trees) was
+## Implementation
+The game was written in C++. A Trie data structure (prefix trees) was
 used to store and search through an English dictionary, as well as to store and search
 trough words submitted by players.
 
 
-###Why Use a Trie?
+### Why Use a Trie?
 
 Why use a trie? The cost for insertion and searching within a trie is O(k) where k is the
 length of the word being inserted or searched for. Therefore, a trie can be used to store
