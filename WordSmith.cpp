@@ -14,11 +14,9 @@ WordSmith::WordSmith()
 }
 
 //////////Play Game Functions/////////////
-/*The method will being a new round, continaing multiple games. It keeps
- track of the highest-score within a given round. It will keep track of
- the time of a single round and notify a player once their time is over.
- The round ends once a player enters "N" when prompted
- at the beginning of a round.*/
+/*The method will being a new round.
+ Each round can keep track of the score of multiple players, as well
+ as the highest score in the round.*/
 void WordSmith::newRoundofGames()
 {
    
@@ -50,7 +48,7 @@ void WordSmith::getPlayerName()
    playerName();
 }
 
-/* Starts a single game. Will prompt the player to being by printing out a
+/* Starts a single game. Will prompt the player to begin by printing out a
  shuffled word.*/
 void WordSmith::startGame()
 {
@@ -68,6 +66,9 @@ void WordSmith::startGame()
    cout << "Your current score is: " << score << endl;
 }
 
+/*a single player game-play function, which prompts the player to enter
+ a word, checks if there is any time left int he game, checks if the word
+ is in the dictionary, and awards points appropriately.*/
 void WordSmith::wordSmithGame()
 {
    string wordEntry;
@@ -126,6 +127,7 @@ void WordSmith::wordSmithGame()
    cout << endl;
 }
 
+//prints the player with the best score in a single round.
 void WordSmith::bestGame()
 {
    if (score > topScore && score > 0)
@@ -155,7 +157,9 @@ bool WordSmith::checkWord(string submittedWord)
            && isContainedIn(submittedWord, initialWord));
 }
 
-//checkWord() helper, makes sure letters submitted were in original letters
+/*checkWord() helper, makes sure letters submitted by the player
+were in original letters (of the shuffled word)
+given at the beginning of the game*/
 bool WordSmith::isContainedIn(string playerStr, string gameLetters)
 {
    int availableLetterCounts[256]; // Num pats in a byte

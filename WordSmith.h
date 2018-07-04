@@ -1,12 +1,30 @@
+/*
+ File: Trie.h
+ Author: Talia Chopra
+ Date: Winter 2018
+ Partner: I worked alone
+ Course: Intermediate Software Design in C++ (CS 2B), Foothill College, 2018
+ 
+ Summary of File:
+ This file contains the prototype for a WordSmithGame. This game
+ is played in rounds, with multiple players palying one, 120 second word-
+ construction game per round. A WordSmith object must first be initialized,
+ and then the game begins by using the public member newRoundofGames().
+ 
+ The player with the highest score will be displayed at the end of a round,
+ which termiantes when a player manually enters "N" when prompted. 
+ */
+
 #include <time.h>
 #include <stdio.h>
 #include <string>
 #include <vector>
+#include "Trie.h"
+
 using namespace std;
 
 #ifndef WordSmith_h
 #define WordSmith_h
-#include "Trie.h"
 
 class WordSmith
 {
