@@ -57,3 +57,11 @@ itself.
 While other data structures such as hash tables may be viable alternatives, they do not
 allow for prefix searching which makes the trie especially well suit for this application.
 
+## To-Do
+
+This came was completed for a class project, and there are improvement that will make this
+project's design neater and more efficient. Some "to-do's" are listed below:
+
+* The WordSmith class is too large. Some of the elements could be broken up into smaller classes 
+and WordSmith could then be composed of those classes using composition. 
+* Develop a user interface.
